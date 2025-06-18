@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import githubIcon from '../assets/images/github.png';
 import linkedinIcon from '../assets/images/linkedin.png';
 import emailIcon from '../assets/images/email.png';
@@ -21,20 +22,20 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-semibold text-white mb-3">Quick Links</h4>
           <ul className="space-y-2 text-sm">
-            <li><a href="#home" className="hover:underline">Home</a></li>
-            <li><a href="#about" className="hover:underline">About</a></li>
-            <li><a href="#services" className="hover:underline">Services</a></li>
-            <li><a href="#tech" className="hover:underline">Tech Stack</a></li>
-            <li><a href="#contact" className="hover:underline">Contact</a></li>
+            <li><Link to="/" className="hover:underline">Home</Link></li>
+            <li><Link to="/about" className="hover:underline">About</Link></li>
+            <li><Link to="/services" className="hover:underline">Services</Link></li>
+            <li><Link to="/careers" className="hover:underline">Careers</Link></li>
+            <li><Link to="/contact" className="hover:underline">Contact</Link></li>
           </ul>
         </div>
 
         {/* Contact + Social */}
         <div>
           <h4 className="text-lg font-semibold text-white mb-3">Get in Touch</h4>
-          <p className="text-sm">📍 Hyderabad, India</p>
-          <p className="text-sm">📧 contact@bprnextgen.com</p>
-          <p className="text-sm mb-4">📞 +91 98765 43210</p>
+          <p className="text-sm">📍 Vishakhapatnam, India</p>
+          <p className="text-sm">📧 prudhvirajub@bprnextgen.org</p>
+          <p className="text-sm mb-4">📞 +91 9765288888</p>
 
           <div className="flex space-x-4 mt-2">
             <a
@@ -56,7 +57,7 @@ const Footer = () => {
               <img src={githubIcon} alt="GitHub" className="h-6 w-6 object-contain" />
             </a>
             <a
-              href="mailto:xyz@gmail.com"
+              href="mailto:contact@bprnextgen.com"
               className="hover:opacity-75"
               aria-label="Email"
             >
