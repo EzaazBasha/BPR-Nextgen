@@ -29,15 +29,15 @@ const Contact = () => {
 
     emailjs
       .send(
-        'your_service_id',   // ✅ Replace with your EmailJS service ID
-        'your_template_id',  // ✅ Replace with your EmailJS template ID
+        'service_l16z9qk',   // ✅ Replace with your EmailJS service ID
+        'template_ny19pvo',  // ✅ Replace with your EmailJS template ID
         {
           from_name: formData.name,
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
         },
-        'your_public_key'    // ✅ Replace with your EmailJS public key
+        'ckk9mnREfkHlOGLlg'    // ✅ Replace with your EmailJS public key
       )
       .then(() => {
         setSuccess(true);
@@ -117,7 +117,7 @@ const Contact = () => {
 
           {/* Contact Info */}
           <div className="space-y-4 text-gray-700">
-            <p><strong>📧 Email:</strong> prudhvirajub@bprnextgen.org</p>
+            <p><strong>📧 Email:</strong> prudhvibprnextgensolutions@gmail.com</p>
             <p><strong>📞 Phone:</strong> +91 9765288888</p>
             <p><strong>📍 Location:</strong> Vishakhapatnam, India</p>
             <p><strong>🕐 Hours:</strong> Mon–Fri, 10:00 AM – 6:00 PM IST</p>

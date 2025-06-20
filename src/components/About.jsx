@@ -1,6 +1,7 @@
 import React from "react";
-import tech from '../assets/images/tech-team.jpeg';
-import unk from '../assets/images/unknown.jpeg';
+import { Link } from "react-router-dom";
+import tech from "../assets/images/tech-team.jpeg";
+import unk from "../assets/images/unknown.jpeg";
 import { motion } from "framer-motion";
 
 const teamMembers = [
@@ -19,7 +20,7 @@ const teamMembers = [
   {
     name: "B Rupesh Raju",
     role: "Business Development Manager & CFO",
-    bio: "A financial architect focused on sustainable growth and smart capital strategy",
+    bio: "A financial architect focused on sustainable growth and smart capital strategy.",
     image: unk,
   },
 ];
@@ -84,29 +85,17 @@ const About = () => {
           <div className="bg-blue-50 p-6 rounded-xl shadow hover:shadow-lg transition">
             <h3 className="text-xl font-semibold text-blue-700 mb-2">🌍 Vision</h3>
             <ul className="list-disc list-inside text-gray-700 space-y-2">
-              <li>
-                To be a catalyst of digital evolution, enabling enterprises to lead in an intelligent, automated, and sustainable future.
-              </li>
-              <li>
-                To shape the next generation of smart businesses through innovation, data intelligence, and emerging technologies.
-              </li>
-              <li>
-                To empower global enterprises with future-proof digital ecosystems that drive lasting impact and transformation.
-              </li>
+              <li>To be a catalyst of digital evolution, enabling enterprises to lead in an intelligent, automated, and sustainable future.</li>
+              <li>To shape the next generation of smart businesses through innovation, data intelligence, and emerging technologies.</li>
+              <li>To empower global enterprises with future-proof digital ecosystems that drive lasting impact and transformation.</li>
             </ul>
           </div>
           <div className="bg-blue-50 p-6 rounded-xl shadow hover:shadow-lg transition">
             <h3 className="text-xl font-semibold text-blue-700 mb-2">🚀 Mission</h3>
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
-              <li>
-                To deliver agile, scalable, and intelligent solutions that help businesses adapt and thrive in a constantly changing digital landscape.
-              </li>
-              <li>
-                To bridge the gap between traditional systems and tomorrow’s technology, ensuring our clients are always a step ahead.
-              </li>
-              <li>
-                To co-create value with our clients by combining innovation, strategy, and cutting-edge technology in every solution.
-              </li>
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <li>To deliver agile, scalable, and intelligent solutions that help businesses adapt and thrive in a constantly changing digital landscape.</li>
+              <li>To bridge the gap between traditional systems and tomorrow’s technology, ensuring our clients are always a step ahead.</li>
+              <li>To co-create value with our clients by combining innovation, strategy, and cutting-edge technology in every solution.</li>
             </ul>
           </div>
         </div>
@@ -127,13 +116,13 @@ const About = () => {
             </div>
             <div>
               <h4 className="font-semibold text-blue-600">Future</h4>
-              <p className="text-gray-700"> Cloud migration platform and a global delivery center — strengthening our footprint as an emerging multinational leader in next-gen technology services.</p>
+              <p className="text-gray-700">Cloud migration platform and a global delivery center — strengthening our footprint as an emerging multinational leader in next-gen technology services.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Leadership / Team */}
+      {/* Leadership */}
       <section className="py-12 px-6 md:px-20 bg-blue-50">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-2xl font-semibold text-blue-700 mb-10">Leadership</h2>
@@ -172,12 +161,12 @@ const About = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-blue-700 mb-4">Want to build smarter?</h2>
           <p className="mb-6 text-gray-700">Let’s shape the future together.</p>
-          <a
-            href="#contact"
-            className="inline-block px-6 py-3 bg-blue-600 text-white rounded-xl shadow hover:bg-blue-700 transition"
+          <Link
+            to="/contact"
+            className="inline-block px-6 py-3 bg-white text-blue-900 rounded-xl font-semibold shadow hover:bg-gray-100 transition"
           >
             Contact Us →
-          </a>
+          </Link>
         </div>
       </section>
     </main>

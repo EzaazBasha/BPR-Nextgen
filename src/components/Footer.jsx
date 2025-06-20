@@ -34,12 +34,12 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-semibold text-white mb-3">Get in Touch</h4>
           <p className="text-sm">📍 Vishakhapatnam, India</p>
-          <p className="text-sm">📧 prudhvirajub@bprnextgen.org</p>
+          <p className="text-sm">📧 prudhvibprnextgensolutions@gmail.com</p>
           <p className="text-sm mb-4">📞 +91 9765288888</p>
 
           <div className="flex space-x-4 mt-2">
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/bpr-nextgen-solutions"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-75"
@@ -57,7 +57,7 @@ const Footer = () => {
               <img src={githubIcon} alt="GitHub" className="h-6 w-6 object-contain" />
             </a>
             <a
-              href="mailto:contact@bprnextgen.com"
+              href="mailto:prudhvibprnextgensolutions@gmail.com"
               className="hover:opacity-75"
               aria-label="Email"
             >

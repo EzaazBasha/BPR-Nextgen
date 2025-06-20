@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   Code2,
   Smartphone,
@@ -12,7 +13,7 @@ import {
   GraduationCap,
   Truck,
   HeartPulse,
-  ShoppingCart
+  ShoppingCart,
 } from "lucide-react";
 
 const coreServices = [
@@ -78,12 +79,17 @@ const Services = () => {
         >
           Explore our cutting-edge services built to scale, adapt, and lead.
         </motion.p>
-        <a
-          href="#contact"
-          className="inline-block px-6 py-3 bg-white text-blue-900 rounded-xl font-semibold shadow hover:bg-gray-100 transition"
-        >
-          Get in Touch
-        </a>
+        <div className="relative inline-block group">
+          <Link
+            to="/contact"
+            className="inline-block px-6 py-3 bg-white text-blue-900 rounded-xl font-semibold shadow hover:bg-gray-100 transition"
+          >
+            Get in Touch
+          </Link>
+          <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 text-sm text-white bg-gray-800 rounded-md px-3 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 pointer-events-none text-center">
+            Reach out via contact form — we’ll respond shortly.
+          </div>
+        </div>
       </section>
 
       {/* Core Services */}
@@ -132,14 +138,23 @@ const Services = () => {
 
       {/* Call to Action */}
       <section className="py-16 px-6 md:px-20 bg-blue-900 text-white text-center">
-        <h2 className="text-3xl font-bold mb-4">Let’s build your next big idea — smarter and faster.</h2>
-        <p className="mb-6">Schedule a free consultation and explore the possibilities with BPR NextGen Solutions.</p>
-        <a
-          href="#contact"
-          className="inline-block px-6 py-3 bg-white text-blue-900 rounded-xl font-semibold shadow hover:bg-gray-100 transition"
-        >
-          Schedule Now
-        </a>
+        <h2 className="text-3xl font-bold mb-4">
+          Let’s build your next big idea — smarter and faster.
+        </h2>
+        <p className="mb-6">
+          Schedule a free consultation and explore the possibilities with BPR NextGen Solutions.
+        </p>
+        <div className="relative inline-block group">
+          <Link
+            to="/contact"
+            className="inline-block px-6 py-3 bg-white text-blue-900 rounded-xl font-semibold shadow hover:bg-gray-100 transition"
+          >
+            Schedule Now
+          </Link>
+          <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 text-sm text-white bg-gray-800 rounded-md px-3 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 pointer-events-none text-center">
+            We’ll help you get started. Contact us now!
+          </div>
+        </div>
       </section>
     </main>
   );

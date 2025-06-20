@@ -1,6 +1,7 @@
 // App.js
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -27,6 +28,7 @@ const AppWrapper = () => {
   return (
     <>
       {loading && <Loader />}
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
