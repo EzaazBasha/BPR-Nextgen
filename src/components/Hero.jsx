@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // ✅ Import Link
 
 const Hero = () => {
   return (
@@ -17,24 +18,23 @@ const Hero = () => {
             Empowering businesses with future-ready digital solutions to scale, adapt, and lead.
           </p>
           <div className="mt-6 flex justify-center gap-4 flex-wrap">
-            <a
-              href="#contact"
+            <Link
+              to="/about"
               className="px-6 py-3 bg-blue-600 text-white rounded-xl shadow hover:bg-blue-700 transition"
             >
               🚀 Explore
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              to="/contact"
               className="px-6 py-3 border border-blue-600 text-blue-600 rounded-xl hover:bg-blue-100 transition"
             >
               📞 Contact Us
-            </a>
+            </Link>
           </div>
         </div>
 
         {/* Quick Highlights */}
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Who We Are */}
           <div className="bg-blue-50 p-6 rounded-xl shadow hover:shadow-lg hover:-translate-y-1 transition duration-300 ease-in-out">
             <h3 className="text-xl font-semibold text-blue-700 mb-2">Who We Are</h3>
             <p className="text-gray-700 text-sm mb-2">
@@ -48,7 +48,6 @@ const Hero = () => {
             </p>
           </div>
 
-          {/* Our Mission & Vision */}
           <div className="bg-blue-50 p-6 rounded-xl shadow hover:shadow-lg hover:-translate-y-1 transition duration-300 ease-in-out">
             <h3 className="text-xl font-semibold text-blue-700 mb-2">Our Mission & Vision</h3>
             <p className="text-gray-700 text-sm mb-2">
@@ -60,7 +59,6 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Key Features */}
         <div>
           <h3 className="text-center text-xl font-semibold text-blue-700 mb-6">Why Choose BPR?</h3>
           <div className="flex justify-center flex-wrap gap-4 text-sm text-gray-700">

@@ -29,15 +29,15 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_l16z9qk',   // ✅ Replace with your EmailJS service ID
-        'template_ny19pvo',  // ✅ Replace with your EmailJS template ID
+        "service_l16z9qk", // ✅ Replace with your EmailJS service ID
+        "template_ny19pvo", // ✅ Replace with your EmailJS template ID
         {
           from_name: formData.name,
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
         },
-        'ckk9mnREfkHlOGLlg'    // ✅ Replace with your EmailJS public key
+        "ckk9mnREfkHlOGLlg" // ✅ Replace with your EmailJS public key
       )
       .then(() => {
         setSuccess(true);
@@ -62,7 +62,8 @@ const Contact = () => {
           Let’s Build the Future Together
         </motion.h1>
         <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
-          We’d love to hear from you — whether it’s a project idea, partnership opportunity, or just a quick hello.
+          We’d love to hear from you — whether it’s a project idea, partnership
+          opportunity, or just a quick hello.
         </p>
       </section>
 
@@ -106,7 +107,11 @@ const Contact = () => {
               required
             ></textarea>
             {error && <p className="text-red-500 text-sm">{error}</p>}
-            {success && <p className="text-green-600 text-sm">Message sent successfully!</p>}
+            {success && (
+              <p className="text-green-600 text-sm">
+                Message sent successfully!
+              </p>
+            )}
             <button
               type="submit"
               className="bg-blue-600 text-white px-6 py-3 rounded-2xl shadow hover:bg-blue-700 transition"
@@ -117,14 +122,43 @@ const Contact = () => {
 
           {/* Contact Info */}
           <div className="space-y-4 text-gray-700">
-            <p><strong>📧 Email:</strong> prudhvibprnextgensolutions@gmail.com</p>
-            <p><strong>📞 Phone:</strong> +91 9765288888</p>
-            <p><strong>📍 Location:</strong> Vishakhapatnam, India</p>
-            <p><strong>🕐 Hours:</strong> Mon–Fri, 10:00 AM – 6:00 PM IST</p>
+            <p>
+              <strong>📧 Email:</strong> prudhvibprnextgensolutions@gmail.com
+            </p>
+            <p>
+              <strong>📞 Phone:</strong> +91 9765288888
+            </p>
+            <p>
+              <strong>📍 Location:</strong> Vishakhapatnam, India
+            </p>
+            <p>
+              <strong>🕐 Hours:</strong> Mon–Fri, 10:00 AM – 6:00 PM IST
+            </p>
             <div className="flex gap-4 mt-4 text-blue-700 text-xl">
-              <a href="#" className="hover:text-blue-900"><FaLinkedin /></a>
-              <a href="#" className="hover:text-blue-900"><FaTwitter /></a>
-              <a href="#" className="hover:text-blue-900"><FaGithub /></a>
+              <a
+                href="https://www.linkedin.com/in/bpr-nextgen-solutions"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-900"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-900"
+              >
+                <FaTwitter />
+              </a>
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-900"
+              >
+                <FaGithub />
+              </a>
             </div>
           </div>
         </div>
@@ -132,7 +166,9 @@ const Contact = () => {
 
       {/* CTA Bottom Bar */}
       <section className="py-12 px-6 md:px-20 bg-blue-600 text-white text-center">
-        <h2 className="text-2xl font-bold mb-3">🚀 Ready to start your digital transformation journey?</h2>
+        <h2 className="text-2xl font-bold mb-3">
+          🚀 Ready to start your digital transformation journey?
+        </h2>
         <p className="mb-6">Let’s connect and make it happen.</p>
         <a
           href="/contact"
