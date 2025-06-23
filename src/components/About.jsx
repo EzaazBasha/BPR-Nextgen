@@ -6,19 +6,19 @@ import { motion } from "framer-motion";
 
 const teamMembers = [
   {
-    name: "B Prudhvi Raju",
+    name: "B PRUDHVI RAJU",
     role: "Founder & CEO",
     bio: "A digital innovator focused on building scalable tech platforms.",
     image: unk,
   },
   {
-    name: "Sai Sarat Kumar D",
+    name: "SAI SARAT VARMA D",
     role: "Co Founder & CTO",
     bio: "A tech strategist driving innovation through scalable and secure engineering solutions.",
     image: unk,
   },
   {
-    name: "P Rupesh Raju",
+    name: "P RUPESH RAJU",
     role: "Business Development Manager & CFO",
     bio: "A financial architect focused on sustainable growth and smart capital strategy.",
     image: unk,
