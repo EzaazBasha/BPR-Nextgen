@@ -12,13 +12,13 @@ const teamMembers = [
     image: unk,
   },
   {
-    name: "Sai Sharath Kumar D",
+    name: "Sai Sarat Kumar D",
     role: "Co Founder & CTO",
     bio: "A tech strategist driving innovation through scalable and secure engineering solutions.",
     image: unk,
   },
   {
-    name: "B Rupesh Raju",
+    name: "P Rupesh Raju",
     role: "Business Development Manager & CFO",
     bio: "A financial architect focused on sustainable growth and smart capital strategy.",
     image: unk,
